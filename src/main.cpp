@@ -5,7 +5,7 @@
 
 bool check_valid_file(const std::string& fileName){
     if(fileName.length() < 4 || fileName.substr(fileName.length()-4) != ".tga"){
-        std::cout << "Invalid file name.x" <<std::endl;
+        std::cout << "Invalid file name." <<std::endl;
         return false;
     }
     else{
@@ -23,7 +23,10 @@ int main(int argc, const char** argv) {
 
 
     if(argc < 2 || !std::strcmp(argv[1], "--help")){
-        std::cout << "HELP HELP" << std::endl;
+        std::cout << "Project 2: Image Processing, Fall 2023" << std::endl << std::endl;
+        std::cout << "Usage:" << std::endl;
+        std::cout << "  ./project2.out [output] [firstImage] [method] [...]";
+        return 0;
     }
     else{
 
